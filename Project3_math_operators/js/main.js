@@ -19,3 +19,14 @@ function dividFunction(){
     var divid = 200 / 8;
     document.getElementById ("dividition").innerHTML = "200 /8 = " + divid;
 }
+
+function negation_operator(){
+    var x=10;
+    document.getElementById("Unary").innerHTML= -x;
+}
+
+var x=5;
+x++;
+document.write(x);
+
+window.alert(Math.random()*100);
