@@ -45,3 +45,13 @@ document.getElementById("demo").innerHTML = (x === "Noor");
 var c="menu";
 var d="menu1";
 document.getElementById("demo1").innerHTML=(c===d);
+
+document.write ("</br>");
+document.write(5>2 && 10>4);    //If one or both is false, the code will return “false”
+
+document.write ("</br>");
+document.write(5>2 || 2>4);    //The || (or) operator works this way
+
+function NOT_Operation (){
+    document.getElementById("LogicalOperators").innerHTML=!(5>10);
+}
