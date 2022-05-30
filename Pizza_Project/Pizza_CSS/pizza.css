@@ -1,0 +1,78 @@
+body{
+    background: rgb(219, 219, 219);
+    font-family: Calibri;
+    color: darkblue;
+    align-items: center;
+}
+h1{
+    font-family: Cambria;
+    font-weight: bold;
+    color: Blu;
+}
+h3{
+    font-family: Cambria;
+    font-weight: bold;
+    color: brown;
+}
+#menuBG{
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu{
+    width: 600px;
+    height: 200px;
+    box-shadow: 4px 4px 4px rgba(219, 240, 240, 0.8);
+    padding: 10px;
+}
+
+#totalPrice{
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.center {
+	width:200px;
+	height:200px;
+	float:left;
+	}
+
+.right{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#showText{
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: left;
+}
+
+#cart{
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder{
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
