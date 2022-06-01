@@ -17,7 +17,7 @@ function placeXOrO(squareNumber){
         } else{
             activePlayer='X'
         }
-        audio ('media/place.mp3');
+        audio ('./media/place.mp3');
         if(activePlayer==='O'){
             disableClick();
             setTimeout(function(){ computersTurn(); }, 1000);
@@ -56,7 +56,7 @@ function checkWinConditions(){
     else if (arrayIncludes('0O', '4O', '8O')){drawWinLine(100,100,520,520);}
 
     else if (selectedSquares.length >=9){
-        audio('media/tie.mp3');
+        audio('./media/tie.mp3');
         setTimeout(function() { resetGame();}, 1000);
     }
 
@@ -73,7 +73,7 @@ function disableClick(){
     setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
 }
 
-function audio(){
+function audio(audioURL){
     let Audio = new Audio(audioURL);
     audio.play();
 }
@@ -117,7 +117,7 @@ function clear(){
     setTimeout(function(){ clear(); resetGame();}, 1000)
 }
 disableClick();
-audio('media/winGame.mp3');
+audio('./media/winGame.mp3');
 animateLineDrawing();
 setTimeout(function() { clear(); resetGame();}, 1000);
 }
