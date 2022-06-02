@@ -74,7 +74,7 @@ function disableClick(){
 }
 
 function audio(audioURL){
-    let Audio = new Audio(audioURL);
+    let audio = new Audio(audioURL);
     audio.play();
 }
 
