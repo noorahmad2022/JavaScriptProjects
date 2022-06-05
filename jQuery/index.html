@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQuery Google CDN-->
+    <title>jQuery</title>
+</head>
+    
+
+
+
+
+
+    <script>
+        //$ mean jQuery, it represent jQuery in js script. we can type like jQuery("html") or $("html")
+        // .append is jQuery api used to insert content in HTML elements.
+            jQuery(document).ready(function(){
+                $("html").append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='p1'> Paragraph 1</p>\
+                                <p id='p2'> show Basic jQuery</p>\
+                                <p id='p3'> hide Basic jQuery</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                $("p").css({"color":"red"});    //change the color of all paragraph tag in html file
+                $("#p2").css({"color":"blue"}); // change the color of paragraph 2
+                $("#p2").css({"cursor":"pointer"}); //change cursor on hover on paragraph 2
+                $("#p2").click(function(){          //function to show h1 tag
+                    $('h1').show();
+                });
+                $("#p3").css({"cursor":"pointer"});
+                $("#p3").click(function(){              //function to hide h1 tag
+                    $('h1').hide();
+                });
+
+            });
+    </script>
+</html>
